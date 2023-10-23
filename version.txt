@@ -1,0 +1,13 @@
+ansible [core 2.14.5]
+  config file = None
+  configured module search path = ['/srv/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/lib/python3.11/site-packages/ansible
+  ansible collection location = /srv/ansible/.ansible/collections:/usr/share/ansible/collections
+  executable location = /usr/bin/ansible
+  python version = 3.11.6 (main, Oct  4 2023, 06:22:18) [GCC 12.2.1 20220924] (/usr/bin/python3)
+  jinja version = 3.1.2
+  libyaml = True
+ansible-lint 6.17.2 using ansible-core:2.14.5 ansible-compat:4.0.4 ruamel-yaml:0.17.28 ruamel-yaml-clib:0.2.7
+A new release of ansible-lint is available: 6.17.2 → 6.21.1
+
+1698019829
