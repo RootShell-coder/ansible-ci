@@ -1,21 +1,21 @@
-FROM python:3-alpine
+FROM python:alpine
 
 WORKDIR /srv/ansible
 
 RUN set eux; \
-    apk add --update --no-cache \
-    ansible \
-    ansible-lint \
-    bash \
-    openssh \
-    openssl \
-    sshpass \
-    git \
-    grep \
-    curl \
-    tree; \
-    addgroup -S ansible; \
-    adduser -S ansible -G ansible -h /srv/ansible -s /bin/bash;
+  apk add --update --no-cache \
+  bash \
+  openssh \
+  openssl \
+  sshpass \
+  git \
+  grep \
+  curl \
+  tree; \
+  python3 -m pip install --upgrade pip; \
+  python3 -m pip install ansible ansible-lint; \
+  addgroup -S ansible; \
+  adduser -S ansible -G ansible -h /srv/ansible -s /bin/bash;
 
 USER ansible:ansible
 ENTRYPOINT []
