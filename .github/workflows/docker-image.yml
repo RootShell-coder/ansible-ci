@@ -57,18 +57,20 @@ jobs:
       - name: Check version
         run: |
           docker pull ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest
-          echo "\n\nANSIBLE VERSION"  >> version.txt
+          echo "- ANSIBLE VERSION"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible --version >> version.txt
-          echo "\nANSIBLE LINT"  >> version.txt
+          echo "- ANSIBLE LINT"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-lint --version >> version.txt
-          echo "\nANSIBLE GALAXY"  >> version.txt
+          echo "- ANSIBLE GALAXY"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-galaxy --version >> version.txt
-          echo "\nANSIBLE CONNECTION"  >> version.txt
+          echo "- ANSIBLE CONNECTION"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-connection --version >> version.txt
-          echo "\nANSIBLE VAULT"  >> version.txt
+          echo "- ANSIBLE VAULT"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-vault --version >> version.txt
-          echo "\nANSIBLE COMMUNITY"  >> version.txt
+          echo "- ANSIBLE COMMUNITY"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-community --version >> version.txt
+          echo "- ANSIBLE-GALAXY COLLECTION"  >> version.txt
+          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-galaxy collection list >> version.txt
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
