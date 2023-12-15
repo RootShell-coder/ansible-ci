@@ -1,7 +1,9 @@
-FROM python:3.11-alpine
+FROM python:3.12-alpine
 
 RUN set eux; \
   apk add --update --no-cache \
+  gcc \
+  libc-dev \
   bash \
   openssh \
   openssl \
@@ -16,6 +18,7 @@ RUN set eux; \
   addgroup -S ansible; \
   adduser -S ansible -G ansible -h /home/ansible -s /bin/bash;
 
+WORKDIR /home/ansible
 USER ansible:ansible
 ENTRYPOINT []
 CMD ["ansible", "--help"]
