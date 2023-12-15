@@ -39,8 +39,8 @@ jobs:
         with:
           push: true
           tags: |
-            ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:3.11-alpine
-            ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest
+            rootshellcoder/ansible:3.11-alpine
+            rootshellcoder/ansible:latest
 
   check:
     needs: [ push ]
