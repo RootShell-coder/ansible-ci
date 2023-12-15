@@ -4,6 +4,7 @@ RUN set eux; \
   apk add --update --no-cache \
   gcc \
   libc-dev \
+  libffi-dev \
   bash \
   openssh \
   openssl \
