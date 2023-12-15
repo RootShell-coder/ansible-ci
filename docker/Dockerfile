@@ -2,8 +2,6 @@ FROM python:3.11-alpine
 
 RUN set eux; \
   apk add --update --no-cache \
-  gcc \
-  libc-dev \
   bash \
   openssh \
   openssl \
