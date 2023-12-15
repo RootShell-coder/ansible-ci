@@ -1,4 +1,4 @@
-FROM python:3.12-alpine
+FROM python:alpine
 
 RUN set eux; \
   apk add --update --no-cache \
