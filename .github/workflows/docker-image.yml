@@ -5,14 +5,17 @@ on:
   push:
     branches: ["master"]
     paths:
-      - 'Dockerfile'
+      - 'docker/**'
+      - '.github/workflows/**'
   pull_request:
     branches: ["master"]
     paths:
-      - 'Dockerfile'
+      - 'docker/**'
+      - '.github/workflows/**'
 
 env:
-  IMAGE_NAME: ansible
+  NAME_TAG: rootshellcoder/ansible:3.11-alpine
+  LATEST_TAG: rootshellcoder/ansible:latest
 
 jobs:
   test:
@@ -20,13 +23,17 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Build Test
-        run: docker build .
+        run: docker build -f docker/Dockerfile .
 
   push:
     needs: [ test ]
     name: Publish to Docker Hub
     runs-on: [ ubuntu-latest ]
     steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
       - name: Login to Docker Hub
@@ -37,10 +44,12 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
+          context: docker
           push: true
+          platforms: linux/amd64,linux/arm64,linux/amd
           tags: |
-            rootshellcoder/ansible:3.11-alpine
-            rootshellcoder/ansible:latest
+            ${{ env.LATEST_TAG }}
+            ${{ env.NAME_TAG }}
 
   check:
     needs: [ push ]
@@ -55,23 +64,23 @@ jobs:
           echo "---" >> version.txt
       - name: Check version
         run: |
-          docker pull ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest
+          docker pull ${{ env.LATEST_TAG }}
           echo "- PYTHON3 VERSION"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest python3 --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} python3 --version >> version.txt
           echo "- ANSIBLE VERSION"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible --version >> version.txt
           echo "- ANSIBLE LINT"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-lint --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-lint --version >> version.txt
           echo "- ANSIBLE GALAXY"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-galaxy --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy --version >> version.txt
           echo "- ANSIBLE CONNECTION"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-connection --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-connection --version >> version.txt
           echo "- ANSIBLE VAULT"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-vault --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-vault --version >> version.txt
           echo "- ANSIBLE COMMUNITY"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-community --version >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-community --version >> version.txt
           echo "- ANSIBLE-GALAXY COLLECTION"  >> version.txt
-          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible-galaxy collection list >> version.txt
+          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> version.txt
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
