@@ -51,12 +51,14 @@ jobs:
       - uses: actions/checkout@v3
       - name: Create report file
         run: |
-          echo "BUILT TIME" > version.txt
+          echo "BUILD TIME" > version.txt
           date +%s >> version.txt
           echo "---" >> version.txt
       - name: Check version
         run: |
           docker pull ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest
+          echo "- PYTHON3 VERSION"  >> version.txt
+          docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest python3 --version >> version.txt
           echo "- ANSIBLE VERSION"  >> version.txt
           docker run -i --rm  ${{ secrets.DOCKERHUB_USER }}/${IMAGE_NAME}:latest ansible --version >> version.txt
           echo "- ANSIBLE LINT"  >> version.txt
