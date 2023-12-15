@@ -1,7 +1,5 @@
 FROM python:3.11-alpine
 
-WORKDIR /srv/ansible
-
 RUN set eux; \
   apk add --update --no-cache \
   bash \
@@ -16,7 +14,7 @@ RUN set eux; \
   python3 -m pip install ansible ansible-lint; \
   ansible-galaxy collection install ansible.netcommon; \
   addgroup -S ansible; \
-  adduser -S ansible -G ansible -h /srv/ansible -s /bin/bash;
+  adduser -S ansible -G ansible -h /home/ansible -s /bin/bash;
 
 USER ansible:ansible
 ENTRYPOINT []
