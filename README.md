@@ -18,7 +18,7 @@ variables:
   ANSIBLE_FORCE_COLOR: "true"
   ANSIBLE_STARATEGY: free
   ANSIBLE_PIPELINING: 1
-  ANSIBLE_TRANSPORT: smart
+  # ANSIBLE_TRANSPORT: smart #DEPRECATED WARNING
   ANSIBLE_BECOME_EXE: su
   ANSIBLE_BECOME_METHOD: su
   ANSIBLE_BECOME_USER: root
@@ -30,7 +30,7 @@ variables:
 
 ansible_ver:
   stage: ver
-  image: rootshellcoder/ansible:latest
+  image: rootshellcoder/ansible:3.11-alpine
   when: manual
   script:
     - ansible --version
@@ -38,14 +38,14 @@ ansible_ver:
 
 ansible_lint:
   stage: lint
-  image: rootshellcoder/ansible:latest
+  image: rootshellcoder/ansible:3.11-alpine
   script:
     - tree
     - ansible-lint -q --offline
 
 ansible_play:
   stage: play
-  image: rootshellcoder/ansible:latest
+  image: rootshellcoder/ansible:3.11-alpine
   script:
     - ansible-playbook playbooks/other_play.yml
 ```

@@ -5,11 +5,11 @@ on:
   push:
     branches: ["master"]
     paths:
-      - 'docker/**'
+      - 'Dockerfile'
   pull_request:
     branches: ["master"]
     paths:
-      - 'docker/**'
+      - 'Dockerfile'
 
 env:
   IMAGE_NAME: ansible
