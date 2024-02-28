@@ -1,17 +1,17 @@
 name: Ansible-CI
 on:
   schedule:
-    - cron: '30 5 * * *'
+    - cron: "30 5 * * *"
   push:
     branches: ["master"]
     paths:
-      - 'docker/**'
-      - '.github/workflows/**'
+      - "docker/**"
+      - ".github/workflows/**"
   pull_request:
     branches: ["master"]
     paths:
-      - 'docker/**'
-      - '.github/workflows/**'
+      - "docker/**"
+      - ".github/workflows/**"
 
 env:
   NAME_TAG: rootshellcoder/ansible:3.12-alpine
@@ -20,16 +20,16 @@ env:
 
 jobs:
   test:
-    runs-on: [ ubuntu-latest ]
+    runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build Test
         run: docker build -f docker/Dockerfile .
 
   push:
-    needs: [ test ]
+    needs: [test]
     name: Publish to Docker Hub
-    runs-on: [ ubuntu-latest ]
+    runs-on: [ubuntu-latest]
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -53,11 +53,11 @@ jobs:
             ${{ env.NAME_TAG }}
 
   check:
-    needs: [ push ]
+    needs: [push]
     name: Pull image
-    runs-on: [ ubuntu-latest ]
+    runs-on: [ubuntu-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Create report file
         run: |
           echo "BUILD TIME" > ${{ env.VER_LOG }}
@@ -68,24 +68,32 @@ jobs:
           docker pull ${{ env.LATEST_TAG }}
           echo "- PYTHON3 VERSION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} python3 --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE VERSION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE LINT"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-lint --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE GALAXY"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE CONNECTION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-connection --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE VAULT"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE COMMUNITY"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
+
           echo "- ANSIBLE-GALAXY COLLECTION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           author_name: RootShell-coder
           author_email: Root.Shelling@gmail.com
-          message: 'upd'
-          add: 'version*'
+          message: "upd"
+          add: "version*"
