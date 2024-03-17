@@ -1,5 +1,5 @@
 BUILD TIME
-1710567997
+1710654356
 ---
 - PYTHON3 VERSION
 Python 3.12.2
@@ -10,7 +10,7 @@ ansible [core 2.16.4]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
-  python version = 3.12.2 (main, Feb  7 2024, 22:13:24) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
+  python version = 3.12.2 (main, Mar 16 2024, 04:28:49) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
   jinja version = 3.1.3
   libyaml = True
 - ANSIBLE LINT
@@ -22,7 +22,7 @@ ansible-galaxy [core 2.16.4]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-galaxy
-  python version = 3.12.2 (main, Feb  7 2024, 22:13:24) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
+  python version = 3.12.2 (main, Mar 16 2024, 04:28:49) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
   jinja version = 3.1.3
   libyaml = True
 - ANSIBLE CONNECTION
@@ -32,7 +32,7 @@ ansible-connection [core 2.16.4]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-connection
-  python version = 3.12.2 (main, Feb  7 2024, 22:13:24) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
+  python version = 3.12.2 (main, Mar 16 2024, 04:28:49) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
   jinja version = 3.1.3
   libyaml = True
 - ANSIBLE VAULT
@@ -42,7 +42,7 @@ ansible-vault [core 2.16.4]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-vault
-  python version = 3.12.2 (main, Feb  7 2024, 22:13:24) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
+  python version = 3.12.2 (main, Mar 16 2024, 04:28:49) [GCC 13.2.1 20231014] (/usr/local/bin/python3)
   jinja version = 3.1.3
   libyaml = True
 - ANSIBLE COMMUNITY
