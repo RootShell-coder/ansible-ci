@@ -1,5 +1,5 @@
 BUILD TIME
-1711518393
+1711604776
 ---
 - PYTHON3 VERSION
 Python 3.12.2
@@ -46,29 +46,29 @@ ansible-vault [core 2.16.5]
   jinja version = 3.1.3
   libyaml = True
 - ANSIBLE COMMUNITY
-Ansible community version 9.3.0
+Ansible community version 9.4.0
 - ANSIBLE-GALAXY COLLECTION
 
 # /usr/local/lib/python3.12/site-packages/ansible_collections
 Collection                               Version
 ---------------------------------------- -------
-amazon.aws                               7.3.0  
+amazon.aws                               7.4.0  
 ansible.netcommon                        5.3.0  
 ansible.posix                            1.5.4  
 ansible.utils                            2.12.0 
-ansible.windows                          2.2.0  
+ansible.windows                          2.3.0  
 arista.eos                               6.2.2  
-awx.awx                                  23.8.1 
+awx.awx                                  23.9.0 
 azure.azcollection                       1.19.0 
-check_point.mgmt                         5.2.2  
+check_point.mgmt                         5.2.3  
 chocolatey.chocolatey                    1.5.1  
 cisco.aci                                2.8.0  
 cisco.asa                                4.0.3  
-cisco.dnac                               6.11.0 
+cisco.dnac                               6.13.1 
 cisco.intersight                         2.0.7  
 cisco.ios                                5.3.0  
 cisco.iosxr                              6.1.1  
-cisco.ise                                2.7.0  
+cisco.ise                                2.8.0  
 cisco.meraki                             2.17.2 
 cisco.mso                                2.5.0  
 cisco.nxos                               5.3.0  
@@ -80,34 +80,34 @@ community.azure                          2.0.0
 community.ciscosmb                       1.0.7  
 community.crypto                         2.18.0 
 community.digitalocean                   1.26.0 
-community.dns                            2.8.1  
-community.docker                         3.8.0  
-community.general                        8.4.0  
+community.dns                            2.8.3  
+community.docker                         3.8.1  
+community.general                        8.5.0  
 community.grafana                        1.8.0  
-community.hashi_vault                    6.1.0  
-community.hrobot                         1.9.0  
+community.hashi_vault                    6.2.0  
+community.hrobot                         1.9.1  
 community.library_inventory_filtering_v1 1.0.0  
 community.libvirt                        1.3.0  
-community.mongodb                        1.7.1  
+community.mongodb                        1.7.2  
 community.mysql                          3.9.0  
 community.network                        5.0.2  
 community.okd                            2.3.0  
 community.postgresql                     3.4.0  
 community.proxysql                       1.5.1  
 community.rabbitmq                       1.2.3  
-community.routeros                       2.13.0 
+community.routeros                       2.14.0 
 community.sap                            2.0.0  
 community.sap_libs                       1.4.2  
 community.sops                           1.6.7  
 community.vmware                         4.2.0  
-community.windows                        2.1.0  
+community.windows                        2.2.0  
 community.zabbix                         2.3.1  
 containers.podman                        1.12.0 
 cyberark.conjur                          1.2.2  
 cyberark.pas                             1.0.25 
 dellemc.enterprise_sonic                 2.4.0  
 dellemc.openmanage                       8.7.0  
-dellemc.powerflex                        2.1.0  
+dellemc.powerflex                        2.2.0  
 dellemc.unity                            1.7.1  
 f5networks.f5_modules                    1.28.0 
 fortinet.fortimanager                    2.4.0  
@@ -120,15 +120,15 @@ hetzner.hcloud                           2.5.0
 hpe.nimble                               1.1.4  
 ibm.qradar                               2.1.0  
 ibm.spectrum_virtualize                  2.0.0  
-ibm.storage_virtualize                   2.2.0  
+ibm.storage_virtualize                   2.3.1  
 infinidat.infinibox                      1.4.3  
 infoblox.nios_modules                    1.6.1  
 inspur.ispim                             2.2.0  
 inspur.sm                                2.3.0  
 junipernetworks.junos                    5.3.1  
-kubernetes.core                          2.4.1  
-lowlydba.sqlserver                       2.3.1  
-microsoft.ad                             1.4.1  
+kubernetes.core                          2.4.2  
+lowlydba.sqlserver                       2.3.2  
+microsoft.ad                             1.5.0  
 netapp.aws                               21.7.1 
 netapp.azure                             21.10.1
 netapp.cloudmanager                      21.22.1
@@ -143,8 +143,8 @@ ngine_io.exoscale                        1.1.0
 openstack.cloud                          2.2.0  
 openvswitch.openvswitch                  2.1.1  
 ovirt.ovirt                              3.2.0  
-purestorage.flasharray                   1.26.0 
-purestorage.flashblade                   1.15.0 
+purestorage.flasharray                   1.27.0 
+purestorage.flashblade                   1.16.0 
 purestorage.fusion                       1.6.1  
 sensu.sensu_go                           1.14.0 
 splunk.es                                2.1.2  
