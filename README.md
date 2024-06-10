@@ -30,7 +30,7 @@ variables:
 
 ansible_ver:
   stage: ver
-  image: rootshellcoder/ansible:latest
+  image: ghcr.io/rootshell-coder/ansible:latest
   when: manual
   script:
     - ansible --version
@@ -38,14 +38,14 @@ ansible_ver:
 
 ansible_lint:
   stage: lint
-  image: rootshellcoder/ansible:latest
+  image: ghcr.io/rootshell-coder/ansible:latest
   script:
     - tree
     - ansible-lint -q --offline
 
 ansible_play:
   stage: play
-  image: rootshellcoder/ansible:latest
+  image: ghcr.io/rootshell-coder/ansible:latest
   script:
     - ansible-playbook playbooks/other_play.yml
 ```
