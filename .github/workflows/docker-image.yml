@@ -16,7 +16,7 @@ on:
 env:
   REGISTRY: ghcr.io
   NAME_TAG: ghcr.io/rootshell-coder/ansible:3.12-alpine3.20
-  LATEST_TAG: /ghcr.iorootshell-coder/ansible:latest
+  LATEST_TAG: /ghcr.io/rootshell-coder/ansible:latest
   VER_LOG: version_3.12_latest.txt
 
 jobs:
@@ -29,7 +29,7 @@ jobs:
 
   push:
     needs: [test]
-    name: Publish to Docker Hub
+    name: Publish to github registry
     runs-on: [ubuntu-latest]
     steps:
       - name: Checkout
