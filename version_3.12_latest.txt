@@ -1,5 +1,5 @@
 BUILD TIME
-1720590432
+1720676854
 ---
 - PYTHON3 VERSION
 Python 3.12.4
@@ -10,11 +10,11 @@ ansible [core 2.17.1]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
-  python version = 3.12.4 (main, Jul  3 2024, 00:17:46) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
+  python version = 3.12.4 (main, Jul 10 2024, 19:12:02) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
   jinja version = 3.1.4
   libyaml = True
 - ANSIBLE LINT
-ansible-lint 24.6.1 using ansible-core:2.17.1 ansible-compat:24.6.1 ruamel-yaml:0.18.6 ruamel-yaml-clib:0.2.8
+ansible-lint 24.7.0 using ansible-core:2.17.1 ansible-compat:24.7.0 ruamel-yaml:0.18.6 ruamel-yaml-clib:0.2.8
 - ANSIBLE GALAXY
 ansible-galaxy [core 2.17.1]
   config file = None
@@ -22,7 +22,7 @@ ansible-galaxy [core 2.17.1]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-galaxy
-  python version = 3.12.4 (main, Jul  3 2024, 00:17:46) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
+  python version = 3.12.4 (main, Jul 10 2024, 19:12:02) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
   jinja version = 3.1.4
   libyaml = True
 - ANSIBLE CONNECTION
@@ -32,7 +32,7 @@ ansible-connection [core 2.17.1]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-connection
-  python version = 3.12.4 (main, Jul  3 2024, 00:17:46) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
+  python version = 3.12.4 (main, Jul 10 2024, 19:12:02) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
   jinja version = 3.1.4
   libyaml = True
 - ANSIBLE VAULT
@@ -42,7 +42,7 @@ ansible-vault [core 2.17.1]
   ansible python module location = /usr/local/lib/python3.12/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-vault
-  python version = 3.12.4 (main, Jul  3 2024, 00:17:46) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
+  python version = 3.12.4 (main, Jul 10 2024, 19:12:02) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
   jinja version = 3.1.4
   libyaml = True
 - ANSIBLE COMMUNITY
