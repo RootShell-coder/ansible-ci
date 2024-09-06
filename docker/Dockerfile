@@ -3,6 +3,7 @@ FROM python:3.12-alpine3.20
 RUN set eux; \
   apk add --update --no-cache \
   gcc \
+  jq \
   libc-dev \
   libffi-dev \
   bash \
