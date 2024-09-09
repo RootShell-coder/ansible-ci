@@ -91,7 +91,9 @@ jobs:
 
           echo "- ANSIBLE-GALAXY COLLECTION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
-
+          
+          echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.LATEST_TAG }} id >> ${{ env.VER_LOG }}
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
