@@ -1,5 +1,5 @@
 BUILD TIME
-1725845118
+1725845958
 ---
 - PYTHON3 VERSION
 Python 3.12.5
@@ -150,3 +150,5 @@ vmware.vmware_rest                       3.0.1
 vultr.cloud                              1.13.0 
 vyos.vyos                                4.1.0  
 wti.remote                               1.0.5  
+- ANSIBLE USER PERMISSIONS
+uid=1000(ansible) gid=1000(ansible) groups=1000(ansible)
