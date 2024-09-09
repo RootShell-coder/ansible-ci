@@ -18,8 +18,8 @@ RUN set eux; \
   python3 -m pip install --upgrade pip; \
   python3 -m pip install ansible ansible-lint; \
   ansible-galaxy collection install ansible.netcommon; \
-  addgroup -S ansible; \
-  adduser -S ansible -G ansible -h /home/ansible -s /bin/bash;
+  addgroup -g 1000 ansible; \
+  adduser -u 1000 -G ansible -D ansible -s /bin/bash;
 
 WORKDIR /home/ansible
 USER ansible:ansible
