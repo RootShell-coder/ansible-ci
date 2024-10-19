@@ -15,20 +15,12 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  NAME_TAG: ghcr.io/rootshell-coder/ansible:3.12-alpine3.20
+  NAME_TAG: ghcr.io/rootshell-coder/ansible:3.13-alpine3.20
   LATEST_TAG: ghcr.io/rootshell-coder/ansible:latest
-  VER_LOG: version_3.12_latest.txt
+  VER_LOG: version_3.13_latest.txt
 
 jobs:
-  test:
-    runs-on: [ubuntu-latest]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Build Test
-        run: docker buildx build -f docker/Dockerfile docker
-
-  push:
-    needs: [test]
+  build:
     name: Publish to github registry
     runs-on: [ubuntu-latest]
     steps:
@@ -91,7 +83,7 @@ jobs:
 
           echo "- ANSIBLE-GALAXY COLLECTION"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
-          
+
           echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} id >> ${{ env.VER_LOG }}
       - name: Commit changes
