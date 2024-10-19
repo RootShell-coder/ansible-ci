@@ -47,7 +47,7 @@ jobs:
             ${{ env.NAME_TAG }}
 
   check:
-    needs: [push]
+    needs: [build]
     name: Pull image
     runs-on: [ubuntu-latest]
     steps:
