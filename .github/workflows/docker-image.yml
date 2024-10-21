@@ -18,6 +18,7 @@ env:
   NAME_TAG: ghcr.io/rootshell-coder/ansible:3.13-alpine3.20
   LATEST_TAG: ghcr.io/rootshell-coder/ansible:latest
   VER_LOG: version_3.13_latest.txt
+  TRIVY_SECURITY_LOG: trivy_security.log
 
 jobs:
   build:
@@ -86,6 +87,9 @@ jobs:
 
           echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} id >> ${{ env.VER_LOG }}
+
+          docker run aquasec/trivy image ${{ env.LATEST_TAG }} > ${{ env. TRIVY_SECURITY_LOG}}
+
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
