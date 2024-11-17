@@ -1,6 +1,6 @@
 # ansible-ci
 
-[![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml) [![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master&event=schedule)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml)
+[![Build and check image](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml/badge.svg?branch=master)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml) [![Build and check image](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml/badge.svg?branch=master&event=schedule)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml)
 
 ## .gitlab-ci.yml
 
