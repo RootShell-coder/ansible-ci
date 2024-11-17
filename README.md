@@ -1,6 +1,6 @@
 # ansible-ci
 
-[![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml) [![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master&event=schedule)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml)
+[![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml) [![Ansible-CI](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker-image.yml/badge.svg?branch=master&event=schedule)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml)
 
 ## .gitlab-ci.yml
 
@@ -21,7 +21,6 @@ variables:
   DOCKER_DRIVER: overlay2
   DOCKER_TLS_CERTDIR: "/certs"
 
-variables:
   ANSIBLE_PYTHON_INTERPRETER: /usr/bin/python3  # To explicitly configure a Python 3 interpreter
   ANSIBLE_ROLES_PATH: roles                     # Colon-separated paths in which Ansible will search for Roles.
   ANSIBLE_INVENTORY: inventories                # Comma-separated list of Ansible inventory sources
