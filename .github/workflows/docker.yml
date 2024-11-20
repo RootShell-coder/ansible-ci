@@ -73,9 +73,6 @@ jobs:
           echo "- ANSIBLE GALAXY"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
 
-          echo "- ANSIBLE CONNECTION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-connection --version >> ${{ env.VER_LOG }}
-
           echo "- ANSIBLE VAULT"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.LATEST_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
 
