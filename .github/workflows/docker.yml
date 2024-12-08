@@ -58,32 +58,32 @@ jobs:
           echo "---" >> ${{ env.VER_LOG }}
       - name: Check version
         run: |
-          docker pull ${{ env.LATEST_TAG }}
+          docker pull ${{ env.NAME_TAG }}
           echo "- PYTHON3 VERSION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} python3 --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} python3 --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE VERSION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE LINT"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-lint --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-lint --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE GALAXY"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE VAULT"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE COMMUNITY"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE-GALAXY COLLECTION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} id >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} id >> ${{ env.VER_LOG }}
 
-          docker run --rm ghcr.io/rootshell-coder/trivy-cached:latest image ${{ env.LATEST_TAG }} --skip-db-update > ${{ env.TRIVY_SECURITY }}
+          docker run --rm ghcr.io/rootshell-coder/trivy-cached:latest image ${{ env.NAME_TAG }} --skip-db-update > ${{ env.TRIVY_SECURITY }}
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
