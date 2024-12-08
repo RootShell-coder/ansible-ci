@@ -15,7 +15,6 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  NAME_TAG: ghcr.io/rootshell-coder/ansible:3.13-alpine3.20
   LATEST_TAG: ghcr.io/rootshell-coder/ansible:latest
   VER_LOG: VERSIONS.txt
   TRIVY_SECURITY: SECURITY.txt
@@ -45,7 +44,6 @@ jobs:
           platforms: linux/amd64,linux/arm64
           tags: |
             ${{ env.LATEST_TAG }}
-            ${{ env.NAME_TAG }}
 
   check:
     needs: [build]
