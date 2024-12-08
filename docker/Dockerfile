@@ -16,7 +16,7 @@ RUN set eux; \
   rsync \
   tree; \
   python3 -m pip install --upgrade pip; \
-  python3 -m pip install ansible ansible-lint; \
+  python3 -m pip install ansible==10.7.0 ansible-core==2.17.7 ansible-lint; \
   ansible-galaxy collection install ansible.netcommon; \
   ansible-galaxy collection install community.general; \
   addgroup -g 1000 ansible; \

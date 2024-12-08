@@ -2,6 +2,9 @@
 
 [![Build and check image](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml/badge.svg?branch=master)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml) [![Build and check image](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml/badge.svg?branch=master&event=schedule)](https://github.com/RootShell-coder/ansible-ci/actions/workflows/docker.yml)
 
+- [ansible-core==2.17.7](https://docs.ansible.com/ansible/latest/reference_appendices/release_and_maintenance.html#ansible-core-support-matrix)
+- [ansible==10.7.0](#fragment)
+
 ## .gitlab-ci.yml
 
 ```yml

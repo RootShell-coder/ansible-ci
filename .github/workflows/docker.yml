@@ -1,14 +1,14 @@
 name: Build and check image
 on:
   schedule:
-    - cron: "30 5 * * 1-5"
+    - cron: "30 6 * * 1-5"
   push:
-    branches: ["master"]
+    branches: ["core-2.17"]
     paths:
       - "docker/**"
       - ".github/workflows/**"
   pull_request:
-    branches: ["master"]
+    branches: ["core-2.17"]
     paths:
       - "docker/**"
       - ".github/workflows/**"
@@ -16,7 +16,7 @@ on:
 env:
   REGISTRY: ghcr.io
   NAME_TAG: ghcr.io/rootshell-coder/ansible:3.13-alpine3.20
-  LATEST_TAG: ghcr.io/rootshell-coder/ansible:latest
+  LATEST_TAG: ghcr.io/rootshell-coder/ansible:core-2.17
   VER_LOG: VERSIONS.txt
   TRIVY_SECURITY: SECURITY.txt
 
