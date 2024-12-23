@@ -1,5 +1,5 @@
 BUILD TIME
-1734673357
+1734932581
 ---
 - PYTHON3 VERSION
 Python 3.13.1
@@ -11,7 +11,7 @@ ansible [core 2.18.1]
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
   python version = 3.13.1 (main, Dec  4 2024, 20:31:31) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
-  jinja version = 3.1.4
+  jinja version = 3.1.5
   libyaml = True
 - ANSIBLE LINT
 ansible-lint 24.12.2 using ansible-core:2.18.1 ansible-compat:24.10.0 ruamel-yaml:0.18.6 ruamel-yaml-clib:None
@@ -23,7 +23,7 @@ ansible-galaxy [core 2.18.1]
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-galaxy
   python version = 3.13.1 (main, Dec  4 2024, 20:31:31) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
-  jinja version = 3.1.4
+  jinja version = 3.1.5
   libyaml = True
 - ANSIBLE VAULT
 ansible-vault [core 2.18.1]
@@ -33,7 +33,7 @@ ansible-vault [core 2.18.1]
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-vault
   python version = 3.13.1 (main, Dec  4 2024, 20:31:31) [GCC 13.2.1 20240309] (/usr/local/bin/python3)
-  jinja version = 3.1.4
+  jinja version = 3.1.5
   libyaml = True
 - ANSIBLE COMMUNITY
 Ansible community version 11.1.0
