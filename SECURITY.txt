@@ -1,5 +1,5 @@
 
-ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.3)
+ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.4)
 ======================================================
 Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 
