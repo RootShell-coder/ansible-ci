@@ -1,32 +1,5 @@
 
 ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.5)
 ======================================================
-Total: 6 (UNKNOWN: 2, LOW: 2, MEDIUM: 2, HIGH: 0, CRITICAL: 0)
+Total: 0 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 0)
 
-┌─────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
-│ Library │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
-├─────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ curl    │ CVE-2025-0725 │ MEDIUM   │ fixed  │ 8.11.1-r1         │ 8.12.0-r0     │ libcurl: Buffer Overflow in libcurl via zlib Integer         │
-│         │               │          │        │                   │               │ Overflow                                                     │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0725                    │
-│         ├───────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│         │ CVE-2025-0167 │ LOW      │        │                   │               │ When asked to use a `.netrc` file for credentials **and** to │
-│         │               │          │        │                   │               │ follow...                                                    │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
-│         ├───────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│         │ CVE-2025-0665 │ UNKNOWN  │        │                   │               │ libcurl would wrongly close the same eventfd file descriptor │
-│         │               │          │        │                   │               │ twice whe ......                                             │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0665                    │
-├─────────┼───────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│ libcurl │ CVE-2025-0725 │ MEDIUM   │        │                   │               │ libcurl: Buffer Overflow in libcurl via zlib Integer         │
-│         │               │          │        │                   │               │ Overflow                                                     │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0725                    │
-│         ├───────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│         │ CVE-2025-0167 │ LOW      │        │                   │               │ When asked to use a `.netrc` file for credentials **and** to │
-│         │               │          │        │                   │               │ follow...                                                    │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0167                    │
-│         ├───────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│         │ CVE-2025-0665 │ UNKNOWN  │        │                   │               │ libcurl would wrongly close the same eventfd file descriptor │
-│         │               │          │        │                   │               │ twice whe ......                                             │
-│         │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-0665                    │
-└─────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
