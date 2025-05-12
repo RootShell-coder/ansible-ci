@@ -4,7 +4,7 @@ Report Summary
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.6)                           │   alpine   │        1        │    -    │
+│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.6)                           │   alpine   │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_collections/grafana/grafana/pack- │  node-pkg  │        0        │    -    │
 │ age.json                                                                         │            │                 │         │
@@ -29,7 +29,7 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/cffi-1.17.1.dist-info/METADATA            │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/click-8.1.8.dist-info/METADATA            │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/click-8.2.0.dist-info/METADATA            │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/cryptography-44.0.3.dist-info/METADATA    │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
@@ -77,14 +77,3 @@ Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
-
-ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.6)
-======================================================
-Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
-
-┌─────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬───────────────────────────────────────────────────────┐
-│   Library   │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                         Title                         │
-├─────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼───────────────────────────────────────────────────────┤
-│ sqlite-libs │ CVE-2025-29087 │ HIGH     │ fixed  │ 3.45.3-r1         │ 3.45.3-r2     │ sqlite: Integer Overflow in SQLite concat_ws Function │
-│             │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-29087            │
-└─────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴───────────────────────────────────────────────────────┘
