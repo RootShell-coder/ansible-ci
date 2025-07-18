@@ -40,7 +40,7 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/jinja2-3.1.6.dist-info/METADATA           │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/jsonschema-4.24.0.dist-info/METADATA      │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/jsonschema-4.24.1.dist-info/METADATA      │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/jsonschema_specifications-2025.4.1.dist-- │ python-pkg │        0        │    -    │
 │ info/METADATA                                                                    │            │                 │         │
