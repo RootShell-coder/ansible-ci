@@ -4,7 +4,7 @@ Report Summary
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.20.6)                           │   alpine   │        0        │    -    │
+│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.1)                           │   alpine   │        1        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_collections/grafana/grafana/pack- │  node-pkg  │        0        │    -    │
 │ age.json                                                                         │            │                 │         │
@@ -80,3 +80,14 @@ Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
+
+ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.1)
+======================================================
+Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 0, CRITICAL: 1)
+
+┌─────────────┬───────────────┬──────────┬────────┬───────────────────┬───────────────┬───────────────────────────────────────────┐
+│   Library   │ Vulnerability │ Severity │ Status │ Installed Version │ Fixed Version │                   Title                   │
+├─────────────┼───────────────┼──────────┼────────┼───────────────────┼───────────────┼───────────────────────────────────────────┤
+│ sqlite-libs │ CVE-2025-6965 │ CRITICAL │ fixed  │ 3.49.2-r0         │ 3.49.2-r1     │ sqlite: Integer Truncation in SQLite      │
+│             │               │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-6965 │
+└─────────────┴───────────────┴──────────┴────────┴───────────────────┴───────────────┴───────────────────────────────────────────┘
