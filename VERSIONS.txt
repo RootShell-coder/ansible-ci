@@ -1,8 +1,8 @@
 BUILD TIME
-1754545726
+1754632125
 ---
 - PYTHON3 VERSION
-Python 3.13.5
+Python 3.13.6
 - ANSIBLE VERSION
 ansible [core 2.18.7]
   config file = None
@@ -10,7 +10,7 @@ ansible [core 2.18.7]
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible
-  python version = 3.13.5 (main, Jul 15 2025, 19:29:44) [GCC 14.2.0] (/usr/local/bin/python3)
+  python version = 3.13.6 (main, Aug  7 2025, 17:21:12) [GCC 14.2.0] (/usr/local/bin/python3)
   jinja version = 3.1.6
   libyaml = True
 - ANSIBLE LINT
@@ -22,7 +22,7 @@ ansible-galaxy [core 2.18.7]
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-galaxy
-  python version = 3.13.5 (main, Jul 15 2025, 19:29:44) [GCC 14.2.0] (/usr/local/bin/python3)
+  python version = 3.13.6 (main, Aug  7 2025, 17:21:12) [GCC 14.2.0] (/usr/local/bin/python3)
   jinja version = 3.1.6
   libyaml = True
 - ANSIBLE VAULT
@@ -32,7 +32,7 @@ ansible-vault [core 2.18.7]
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
   ansible collection location = /home/ansible/.ansible/collections:/usr/share/ansible/collections
   executable location = /usr/local/bin/ansible-vault
-  python version = 3.13.5 (main, Jul 15 2025, 19:29:44) [GCC 14.2.0] (/usr/local/bin/python3)
+  python version = 3.13.6 (main, Aug  7 2025, 17:21:12) [GCC 14.2.0] (/usr/local/bin/python3)
   jinja version = 3.1.6
   libyaml = True
 - ANSIBLE COMMUNITY
