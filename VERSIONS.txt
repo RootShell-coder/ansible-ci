@@ -1,10 +1,10 @@
 BUILD TIME
-1754891278
+1754977425
 ---
 - PYTHON3 VERSION
 Python 3.13.6
 - ANSIBLE VERSION
-ansible [core 2.18.7]
+ansible [core 2.18.8]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
@@ -14,9 +14,9 @@ ansible [core 2.18.7]
   jinja version = 3.1.6
   libyaml = True
 - ANSIBLE LINT
-ansible-lint 25.7.0 using ansible-core:2.18.7 ansible-compat:25.6.0 ruamel-yaml:0.18.14 ruamel-yaml-clib:0.2.12
+ansible-lint 25.7.0 using ansible-core:2.18.8 ansible-compat:25.6.0 ruamel-yaml:0.18.14 ruamel-yaml-clib:0.2.12
 - ANSIBLE GALAXY
-ansible-galaxy [core 2.18.7]
+ansible-galaxy [core 2.18.8]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
@@ -26,7 +26,7 @@ ansible-galaxy [core 2.18.7]
   jinja version = 3.1.6
   libyaml = True
 - ANSIBLE VAULT
-ansible-vault [core 2.18.7]
+ansible-vault [core 2.18.8]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
