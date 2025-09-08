@@ -42,7 +42,7 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/jsonschema-4.25.1.dist-info/METADATA      │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/jsonschema_specifications-2025.4.1.dist-- │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/jsonschema_specifications-2025.9.1.dist-- │ python-pkg │        0        │    -    │
 │ info/METADATA                                                                    │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/mypy_extensions-1.1.0.dist-info/METADATA  │ python-pkg │        0        │    -    │
