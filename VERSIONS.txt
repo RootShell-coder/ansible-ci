@@ -1,10 +1,10 @@
 BUILD TIME
-1759729278
+1759815671
 ---
 - PYTHON3 VERSION
 Python 3.13.7
 - ANSIBLE VERSION
-ansible [core 2.19.2]
+ansible [core 2.19.3]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
@@ -14,9 +14,9 @@ ansible [core 2.19.2]
   jinja version = 3.1.6
   pyyaml version = 6.0.3 (with libyaml v0.2.5)
 - ANSIBLE LINT
-ansible-lint 25.9.1 using ansible-core:2.19.2 ansible-compat:25.8.1 ruamel-yaml:0.18.15 ruamel-yaml-clib:0.2.14
+ansible-lint 25.9.1 using ansible-core:2.19.3 ansible-compat:25.8.2 ruamel-yaml:0.18.15 ruamel-yaml-clib:0.2.14
 - ANSIBLE GALAXY
-ansible-galaxy [core 2.19.2]
+ansible-galaxy [core 2.19.3]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
@@ -26,7 +26,7 @@ ansible-galaxy [core 2.19.2]
   jinja version = 3.1.6
   pyyaml version = 6.0.3 (with libyaml v0.2.5)
 - ANSIBLE VAULT
-ansible-vault [core 2.19.2]
+ansible-vault [core 2.19.3]
   config file = None
   configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
   ansible python module location = /usr/local/lib/python3.13/site-packages/ansible
@@ -42,7 +42,7 @@ Ansible community version 12.0.0
 # /usr/local/lib/python3.13/site-packages/ansible/_internal/ansible_collections
 Collection                               Version
 ---------------------------------------- -------
-ansible._protomatter                     2.19.2 
+ansible._protomatter                     2.19.3 
 
 # /usr/local/lib/python3.13/site-packages/ansible_collections
 Collection                               Version
