@@ -6,10 +6,13 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.1)                           │   alpine   │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
+│ usr/local/lib/python3.13/site-packages/ansible_collections/containers/podman/pl- │  node-pkg  │        0        │    -    │
+│ aybooks/examples/node_app/package.json                                           │            │                 │         │
+├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_collections/grafana/grafana/pack- │  node-pkg  │        0        │    -    │
 │ age.json                                                                         │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible-12.0.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible-12.1.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_compat-25.8.2.dist-info/METADATA  │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
