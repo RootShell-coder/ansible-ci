@@ -1,24 +1,21 @@
 name: Build and check image
 on:
-  schedule:
-    - cron: "30 5 * * 1-5"
   push:
-    branches: ["master"]
+    branches: ["2.9.27"]
     paths:
       - "docker/**"
       - ".github/workflows/**"
   pull_request:
-    branches: ["master"]
+    branches: ["2.9.27"]
     paths:
       - "docker/**"
       - ".github/workflows/**"
 
 env:
   REGISTRY: ghcr.io
-  NAME_TAG: ghcr.io/rootshell-coder/ansible:3.13-alpine3.20
-  LATEST_TAG: ghcr.io/rootshell-coder/ansible:latest
-  VER_LOG: VERSIONS.txt
-  TRIVY_SECURITY: SECURITY.txt
+  NAME_TAG: ghcr.io/rootshell-coder/ansible:2.9.27
+  VER_LOG: VERSIONS
+  TRIVY_SECURITY: SECURITY
 
 jobs:
   build:
@@ -43,9 +40,7 @@ jobs:
           context: docker
           push: true
           platforms: linux/amd64,linux/arm64
-          tags: |
-            ${{ env.LATEST_TAG }}
-            ${{ env.NAME_TAG }}
+          tags: ${{ env.NAME_TAG }}
 
   check:
     needs: [build]
@@ -60,37 +55,38 @@ jobs:
           echo "---" >> ${{ env.VER_LOG }}
       - name: Check version
         run: |
-          docker pull ${{ env.LATEST_TAG }}
+          docker pull ${{ env.NAME_TAG }}
           echo "- PYTHON3 VERSION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} python3 --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} python3 --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE VERSION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE LINT"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-lint --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-lint --version 2>&1 | grep -v "Failed to guess" >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE GALAXY"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-galaxy --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE VAULT"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE COMMUNITY"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
-
-          echo "- ANSIBLE-GALAXY COLLECTION"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} ansible-galaxy collection list >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
 
           echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.LATEST_TAG }} id >> ${{ env.VER_LOG }}
+          docker run -i --rm  ${{ env.NAME_TAG }} id >> ${{ env.VER_LOG }}
 
-          docker run --rm ghcr.io/rootshell-coder/trivy-cached:latest image ${{ env.LATEST_TAG }} --skip-db-update > ${{ env.TRIVY_SECURITY }}
+          docker run --rm ghcr.io/rootshell-coder/trivy-cached:latest image ${{ env.NAME_TAG }} --skip-db-update > ${{ env.TRIVY_SECURITY }}
 
+      - name: Get current date
+        run: echo "DATE=$(date +%Y-%m-%d_%H-%M-%S)" >> $GITHUB_ENV
       - name: Commit changes
         uses: EndBug/add-and-commit@v9
         with:
           author_name: RootShell-coder
           author_email: Root.Shelling@gmail.com
-          message: "upd"
-          add: "*.txt"
+          message: "ansible 2.9.27 ${{ env.DATE }}"
+          add: |
+            VERSIONS
+            SECURITY
