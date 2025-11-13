@@ -53,9 +53,6 @@ Report Summary
 │ usr/local/lib/python3.6/site-packages/wcmatch-8.3.dist-info/METADATA             │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.6/site-packages/wheel-0.37.1.dist-info/METADATA            │ python-pkg │        1        │    -    │
-├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ /root/.ansible/collections/ansible_collections/community/general/plugins/module- │    text    │        -        │    1    │
-│ s/java_keystore.py                                                               │            │                 │         │
 └──────────────────────────────────────────────────────────────────────────────────┴────────────┴─────────────────┴─────────┘
 Legend:
 - '-': Not scanned
@@ -776,22 +773,3 @@ Total: 25 (UNKNOWN: 0, LOW: 3, MEDIUM: 15, HIGH: 7, CRITICAL: 0)
 │                         │                     │          │          │                   │               │ via attacker controlled input...                             │
 │                         │                     │          │          │                   │               │ https://avd.aquasec.com/nvd/cve-2022-40898                   │
 └─────────────────────────┴─────────────────────┴──────────┴──────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
-
-/root/.ansible/collections/ansible_collections/community/general/plugins/modules/java_keystore.py (secrets)
-===========================================================================================================
-Total: 1 (UNKNOWN: 0, LOW: 0, MEDIUM: 0, HIGH: 1, CRITICAL: 0)
-
-HIGH: AsymmetricPrivateKey (private-key)
-════════════════════════════════════════
-Asymmetric Private Key
-────────────────────────────────────────
- /root/.ansible/collections/ansible_collections/community/general/plugins/modules/java_keystore.py:158-159 (offset: 5696 bytes) (added by 'RUN |3 ANSIBLE_VER=2.9.27 COMMUNITY_GENE')
-────────────────────────────────────────
- 156       private_key: |
- 157         -----BEGIN RSA PRIVATE KEY-----
- 158 ┌       ****************************************************************
- 159 └ *****************************************************************
- 160         -----END RSA PRIVATE KEY-----
-────────────────────────────────────────
-
-
