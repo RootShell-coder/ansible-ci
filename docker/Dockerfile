@@ -6,6 +6,8 @@ ARG ANSIBLE_VER=2.9.27
 ARG COMMUNITY_GENERAL_VER=8.6.1
 ARG NETCOMMON_VER=5.3.0
 
+LABEL org.opencontainers.image.description="Ansible CI container with Python ${PYTHON_VER}, Ansible ${ANSIBLE_VER}, and network automation collections"
+
 RUN set -eux; \
   echo "deb [trusted=yes] http://archive.debian.org/debian stretch main" > /etc/apt/sources.list; \
   echo "deb [trusted=yes] http://archive.debian.org/debian-security stretch/updates main" >> /etc/apt/sources.list; \
