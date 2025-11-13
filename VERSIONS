@@ -1,0 +1,30 @@
+BUILD TIME
+1763069155
+---
+- PYTHON3 VERSION
+Python 3.6.8
+- ANSIBLE VERSION
+ansible 2.9.27
+  config file = None
+  configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible
+  python version = 3.6.8 (default, Jun 11 2019, 01:21:42) [GCC 6.3.0 20170516]
+- ANSIBLE LINT
+ansible-lint 5.4.0 using ansible 2.9.27
+- ANSIBLE GALAXY
+ansible-galaxy 2.9.27
+  config file = None
+  configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible-galaxy
+  python version = 3.6.8 (default, Jun 11 2019, 01:21:42) [GCC 6.3.0 20170516]
+- ANSIBLE VAULT
+ansible-vault 2.9.27
+  config file = None
+  configured module search path = ['/home/ansible/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
+  ansible python module location = /usr/local/lib/python3.6/site-packages/ansible
+  executable location = /usr/local/bin/ansible-vault
+  python version = 3.6.8 (default, Jun 11 2019, 01:21:42) [GCC 6.3.0 20170516]
+- ANSIBLE USER PERMISSIONS
+uid=1000(ansible) gid=1000(ansible) groups=1000(ansible)
