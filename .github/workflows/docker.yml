@@ -71,9 +71,6 @@ jobs:
           echo "- ANSIBLE VAULT"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.NAME_TAG }} ansible-vault --version >> ${{ env.VER_LOG }}
 
-          echo "- ANSIBLE COMMUNITY"  >> ${{ env.VER_LOG }}
-          docker run -i --rm  ${{ env.NAME_TAG }} ansible-community --version >> ${{ env.VER_LOG }}
-
           echo "- ANSIBLE USER PERMISSIONS"  >> ${{ env.VER_LOG }}
           docker run -i --rm  ${{ env.NAME_TAG }} id >> ${{ env.VER_LOG }}
 
