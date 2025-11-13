@@ -3,7 +3,7 @@ ARG PYTHON_VER=3.6.8
 FROM python:${PYTHON_VER}-slim
 
 ARG ANSIBLE_VER=2.9.27
-ARG COMMUNITY_GENERAL_VER=8.6.1
+ARG COMMUNITY_GENERAL_VER=8.6.11
 ARG NETCOMMON_VER=5.3.0
 
 LABEL org.opencontainers.image.description="Ansible CI container with Python ${PYTHON_VER}, Ansible ${ANSIBLE_VER}, and network automation collections"
