@@ -4,7 +4,7 @@ FROM python:${PYTHON_VER}-slim
 
 ARG ANSIBLE_VER=2.9.27
 ARG COMMUNITY_GENERAL_VER=8.6.11
-ARG NETCOMMON_VER=5.3.0
+ARG NETCOMMON_VER=v5.3.0
 
 LABEL org.opencontainers.image.description="Ansible CI container with Python ${PYTHON_VER}, Ansible ${ANSIBLE_VER}, and network automation collections"
 
@@ -45,7 +45,7 @@ RUN set -eux; \
   cd /tmp/collections; \
   curl -L https://github.com/ansible-collections/ansible.netcommon/archive/refs/tags/${NETCOMMON_VER}.tar.gz -o netcommon.tar.gz && \
   tar xzf netcommon.tar.gz && \
-  cd ansible.netcommon-${NETCOMMON_VER} && \
+  cd ansible.netcommon-5.3.0 && \
   ansible-galaxy collection build && \
   ansible-galaxy collection install $(find . -name "*.tar.gz" -type f) || true; \
   cd /tmp/collections; \
