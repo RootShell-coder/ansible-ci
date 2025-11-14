@@ -69,7 +69,7 @@ RUN printf '%s\n' \
     'if [ -f /etc/bash_completion ]; then' \
     '    . /etc/bash_completion' \
     'fi' \
-    >> ./bashrc
+    >> ~/.bashrc
 
 ENTRYPOINT []
 CMD ["ansible", "--help"]
