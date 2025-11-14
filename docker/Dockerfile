@@ -24,6 +24,7 @@ RUN set -eux; \
     -o APT::Get::AllowUnauthenticated=true \
   jq \
   bash \
+  bash-completion \
   openssh-client \
   openssl \
   ca-certificates \
