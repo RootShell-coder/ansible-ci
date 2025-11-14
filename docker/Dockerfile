@@ -23,7 +23,6 @@ RUN set -eux; \
     -o Acquire::AllowUnsignedPackages=true \
     -o APT::Get::AllowUnauthenticated=true \
   jq \
-  bash \
   bash-completion \
   vim \
   openssh-client \
@@ -60,10 +59,17 @@ RUN set -eux; \
 
 RUN set -eux; \
   addgroup --gid 1000 ansible; \
-  adduser --uid 1000 --gid 1000 --disabled-password --shell /bin/bash --gecos "Antique fossil" ansible;
+  adduser --uid 1000 --gid 1000 --disabled-password --shell /bin/bash --gecos "Antique fossil" --home /home/ansible ansible
 
 WORKDIR /home/ansible
 USER ansible:ansible
+
+RUN printf '%s\n' \
+    '' \
+    'if [ -f /etc/bash_completion ]; then' \
+    '    . /etc/bash_completion'
+    'fi'
+    >> ./bashrc
 
 ENTRYPOINT []
 CMD ["ansible", "--help"]
