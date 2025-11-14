@@ -25,6 +25,7 @@ RUN set -eux; \
   jq \
   bash \
   bash-completion \
+  vim \
   openssh-client \
   openssl \
   ca-certificates \
