@@ -6,8 +6,6 @@ ARG ANSIBLE_VER=2.9.27
 ARG COMMUNITY_GENERAL_VER=8.6.11
 ARG NETCOMMON_VER=v5.3.0
 
-ENV HOSTNAME=ansible
-
 LABEL org.opencontainers.image.description="Ansible CI container with Python ${PYTHON_VER}, Ansible ${ANSIBLE_VER}, and network automation collections"
 
 COPY .vimrc /root
