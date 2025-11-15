@@ -30,4 +30,4 @@ set tabstop=2
 set shiftwidth=2
 
 set list
-set listchars=tab:\<--\>,trail:.,nbsp:.
+set listchars=tab:>-,trail:.,nbsp:.
