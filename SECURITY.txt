@@ -12,11 +12,11 @@ Report Summary
 │ usr/local/lib/python3.13/site-packages/ansible_collections/grafana/grafana/pack- │  node-pkg  │        0        │    -    │
 │ age.json                                                                         │            │                 │         │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible-12.2.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible-13.0.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_compat-25.11.0.dist-info/METADATA │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible_core-2.19.4.dist-info/METADATA    │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible_core-2.20.0.dist-info/METADATA    │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_lint-25.11.0.dist-info/METADATA   │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
