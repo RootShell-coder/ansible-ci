@@ -1,5 +1,5 @@
 BUILD TIME
-1763963044
+1764049445
 ---
 - PYTHON3 VERSION
 Python 3.13.9
@@ -14,7 +14,7 @@ ansible [core 2.20.0]
   jinja version = 3.1.6
   pyyaml version = 6.0.3 (with libyaml v0.2.5)
 - ANSIBLE LINT
-ansible-lint 25.11.0 using ansible-core:2.20.0 ansible-compat:25.11.0 ruamel-yaml:0.18.16 ruamel-yaml-clib:0.2.15
+ansible-lint 25.11.1 using ansible-core:2.20.0 ansible-compat:25.11.0 ruamel-yaml:0.18.16 ruamel-yaml-clib:0.2.15
 - ANSIBLE GALAXY
 ansible-galaxy [core 2.20.0]
   config file = None
