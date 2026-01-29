@@ -4,7 +4,7 @@ Report Summary
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.2)                           │   alpine   │        6        │    -    │
+│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.3)                           │   alpine   │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_collections/containers/podman/pl- │  node-pkg  │        0        │    -    │
 │ aybooks/examples/node_app/package.json                                           │            │                 │         │
@@ -84,35 +84,3 @@ Legend:
 - '-': Not scanned
 - '0': Clean (no security findings detected)
 
-
-ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.2)
-======================================================
-Total: 6 (UNKNOWN: 0, LOW: 3, MEDIUM: 3, HIGH: 0, CRITICAL: 0)
-
-┌───────────────┬────────────────┬──────────┬────────┬───────────────────┬───────────────┬──────────────────────────────────────────────────────────────┐
-│    Library    │ Vulnerability  │ Severity │ Status │ Installed Version │ Fixed Version │                            Title                             │
-├───────────────┼────────────────┼──────────┼────────┼───────────────────┼───────────────┼──────────────────────────────────────────────────────────────┤
-│ busybox       │ CVE-2024-58251 │ MEDIUM   │ fixed  │ 1.37.0-r19        │ 1.37.0-r20    │ In netstat in BusyBox through 1.37.0, local users can launch │
-│               │                │          │        │                   │               │ of networ...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-58251                   │
-│               ├────────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│               │ CVE-2025-46394 │ LOW      │        │                   │               │ In tar in BusyBox through 1.37.0, a TAR archive can have     │
-│               │                │          │        │                   │               │ filenames...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-46394                   │
-├───────────────┼────────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│ busybox-binsh │ CVE-2024-58251 │ MEDIUM   │        │                   │               │ In netstat in BusyBox through 1.37.0, local users can launch │
-│               │                │          │        │                   │               │ of networ...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-58251                   │
-│               ├────────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│               │ CVE-2025-46394 │ LOW      │        │                   │               │ In tar in BusyBox through 1.37.0, a TAR archive can have     │
-│               │                │          │        │                   │               │ filenames...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-46394                   │
-├───────────────┼────────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│ ssl_client    │ CVE-2024-58251 │ MEDIUM   │        │                   │               │ In netstat in BusyBox through 1.37.0, local users can launch │
-│               │                │          │        │                   │               │ of networ...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2024-58251                   │
-│               ├────────────────┼──────────┤        │                   │               ├──────────────────────────────────────────────────────────────┤
-│               │ CVE-2025-46394 │ LOW      │        │                   │               │ In tar in BusyBox through 1.37.0, a TAR archive can have     │
-│               │                │          │        │                   │               │ filenames...                                                 │
-│               │                │          │        │                   │               │ https://avd.aquasec.com/nvd/cve-2025-46394                   │
-└───────────────┴────────────────┴──────────┴────────┴───────────────────┴───────────────┴──────────────────────────────────────────────────────────────┘
