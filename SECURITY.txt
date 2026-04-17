@@ -4,7 +4,7 @@ Report Summary
 ┌──────────────────────────────────────────────────────────────────────────────────┬────────────┬─────────────────┬─────────┐
 │                                      Target                                      │    Type    │ Vulnerabilities │ Secrets │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.3)                           │   alpine   │        0        │    -    │
+│ ghcr.io/rootshell-coder/ansible:latest (alpine 3.22.4)                           │   alpine   │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_collections/containers/podman/pl- │  node-pkg  │        0        │    -    │
 │ aybooks/examples/node_app/package.json                                           │            │                 │         │
