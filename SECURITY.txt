@@ -14,9 +14,9 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ Python                                                                           │ python-pkg │        1        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible-14.2.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible-14.3.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible_compat-26.6.0.dist-info/METADATA  │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible_compat-26.8.0.dist-info/METADATA  │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_core-2.21.3.dist-info/METADATA    │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
