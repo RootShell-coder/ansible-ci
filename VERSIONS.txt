@@ -1,5 +1,5 @@
 BUILD TIME
-1786687561
+1786945790
 ---
 - PYTHON3 VERSION
 Python 3.13.13
@@ -36,7 +36,7 @@ ansible-vault [core 2.21.3]
   jinja version = 3.1.6
   pyyaml version = 6.0.3 (with libyaml v0.2.5)
 - ANSIBLE COMMUNITY
-Ansible community version 14.3.0
+Ansible community version 14.3.1
 - ANSIBLE-GALAXY COLLECTION
 
 # /usr/local/lib/python3.13/site-packages/ansible/_internal/ansible_collections
@@ -110,7 +110,7 @@ hitachivantara.vspone_block              4.8.2
 hitachivantara.vspone_object             1.2.0  
 ibm.storage_virtualize                   3.4.0  
 ieisystem.inmanage                       4.0.0  
-infinidat.infinibox                      1.8.4  
+infinidat.infinibox                      1.8.5  
 infoblox.nios_modules                    1.9.0  
 inspur.ispim                             2.2.4  
 kaytus.ksmanage                          4.0.0  
