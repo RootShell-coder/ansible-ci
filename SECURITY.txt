@@ -16,11 +16,11 @@ Report Summary
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible-14.5.0.dist-info/METADATA         │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible_compat-26.9.0.dist-info/METADATA  │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible_compat-26.10.0.dist-info/METADATA │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/ansible_core-2.21.5.dist-info/METADATA    │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
-│ usr/local/lib/python3.13/site-packages/ansible_lint-26.9.0.dist-info/METADATA    │ python-pkg │        0        │    -    │
+│ usr/local/lib/python3.13/site-packages/ansible_lint-26.10.0.dist-info/METADATA   │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
 │ usr/local/lib/python3.13/site-packages/attrs-26.1.0.dist-info/METADATA           │ python-pkg │        0        │    -    │
 ├──────────────────────────────────────────────────────────────────────────────────┼────────────┼─────────────────┼─────────┤
